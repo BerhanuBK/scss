@@ -1,0 +1,30 @@
+$color1: red;
+$color2: blue;
+
+$fontm: sans-serif;
+
+/*
+p {
+    color: $color1;
+}
+p{
+    color: $color1;
+}
+div{
+  background-color: $color2;  
+
+}
+*/
+%message{
+  font-family: $fontm;
+  font-size: 18px;
+  font-weight:bold;
+  border: 1px solid black;
+  padding: 20px;
+  margin: 20px;
+}
+
+#success{
+  @extend %message;
+  background-color: $color2;
+}
